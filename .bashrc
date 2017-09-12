@@ -1,4 +1,4 @@
-# If not running interactively, don't do anything
+﻿# If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
 # Для начала определить некоторые цвета:
@@ -105,13 +105,13 @@ complete -f -o default -X '!*.+(ogg|OGG)' ogg123
 complete -f -o default -X '!*.pl'  perl perl5
 
 # Установка переменной http_proxy. Варианты - on, off, свой вариант
-sethttpproxy() {
-	case "${1}" in
-	on)
-	export http_proxy='192.168.0.252:3128' ;;
-	off)
-	export http_proxy='' ;;
-	*)
-	export http_proxy="${1}" ;;
-	esac
-}
+#sethttpproxy() {
+#	case "${1}" in
+#	on)
+#	export http_proxy='192.168.0.252:3128' ;;
+#	off)
+#	export http_proxy='' ;;
+#	*)
+#	export http_proxy="${1}" ;;
+#	esac
+#}
